@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EmbedMind AI</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e1e1e;
+            color: white;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 250px;
+            background: #2d2d2d;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 15px;
+            border-radius: 8px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        #resultBox {
+            margin-top: 20px;
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #444;
+        }
+
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>🤖 EmbedMind AI</h1>
+
+    <h3>Paste your code:</h3>
+
+    <textarea id="codeArea" placeholder="Paste your C, C++, Python or Arduino code here..."></textarea>
+
+    <br>
+
+    <button onclick="analyzeCode()">
+        Analyze Code
+    </button>
+
+    <h2>Analysis</h2>
+
+    <div id="resultBox">
+        <pre id="result">Waiting for input...</pre>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
